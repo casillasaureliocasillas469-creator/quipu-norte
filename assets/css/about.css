@@ -1,0 +1,331 @@
+/*==================================
+            ABOUT
+==================================*/
+
+.about{
+
+    position:relative;
+
+    padding:120px 0;
+
+    background:#F7F1E5;
+
+    overflow:hidden;
+
+}
+
+/*==================================
+        FONDO
+==================================*/
+
+.about__background{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+}
+
+/*--------------- CIELO ---------------*/
+
+.about__sky{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        to bottom,
+
+        #F9EFD8 0%,
+
+        #F6E6C8 35%,
+
+        #EBCB96 75%,
+
+        #D7B37A 100%
+
+    );
+
+}
+
+/*--------------- SOL ---------------*/
+
+.about__sun{
+
+    position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    border-radius:50%;
+
+    top:80px;
+
+    right:15%;
+
+    background:radial-gradient(
+
+        circle,
+
+        #FFF7CC 0%,
+
+        #FFD976 45%,
+
+        rgba(255,217,118,.1) 100%
+
+    );
+
+    filter:blur(2px);
+
+    box-shadow:
+
+        0 0 80px rgba(255,208,90,.55),
+
+        0 0 160px rgba(255,208,90,.30);
+
+}
+
+/*--------------- MONTAÑAS ---------------*/
+
+.about__mountain{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+
+    clip-path:polygon(
+
+        0 100%,
+
+        12% 65%,
+
+        24% 82%,
+
+        38% 40%,
+
+        52% 74%,
+
+        68% 28%,
+
+        84% 80%,
+
+        100% 52%,
+
+        100% 100%
+
+    );
+
+}
+
+.about__mountain--1{
+
+    height:260px;
+
+    background:#8E6B4B;
+
+    opacity:.55;
+
+}
+
+.about__mountain--2{
+
+    height:330px;
+
+    background:#755236;
+
+    opacity:.70;
+
+    clip-path:polygon(
+
+        0 100%,
+
+        18% 50%,
+
+        34% 74%,
+
+        48% 26%,
+
+        60% 60%,
+
+        76% 20%,
+
+        100% 100%
+
+    );
+
+}
+
+.about__mountain--3{
+
+    height:430px;
+
+    background:#5F412B;
+
+    clip-path:polygon(
+
+        0 100%,
+
+        15% 65%,
+
+        30% 25%,
+
+        46% 75%,
+
+        62% 18%,
+
+        78% 68%,
+
+        100% 100%
+
+    );
+
+}
+
+/*--------------- PATRÓN TEXTIL ---------------*/
+
+.about__pattern{
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:.06;
+
+    background-image:
+
+        repeating-linear-gradient(
+
+            45deg,
+
+            #6C4429 0px,
+
+            #6C4429 2px,
+
+            transparent 2px,
+
+            transparent 18px
+
+        ),
+
+        repeating-linear-gradient(
+
+            -45deg,
+
+            #6C4429 0px,
+
+            #6C4429 2px,
+
+            transparent 2px,
+
+            transparent 18px
+
+        );
+
+}
+
+.about__container{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.about__image{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.about__card{
+
+    width:360px;
+
+    height:360px;
+
+    border-radius:30px;
+
+    background:linear-gradient(
+        135deg,
+        #C18B56,
+        #8B5E3C
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:120px;
+
+    color:white;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+.about .section-tag{
+
+    color:#A56D44;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.about h2{
+
+    font-size:3rem;
+
+    margin:20px 0;
+
+    line-height:1.2;
+
+}
+
+.about h2 span{
+
+    color:#8B5E3C;
+
+}
+
+.about p{
+
+    line-height:2;
+
+    color:#555;
+
+}
+
+.about__features{
+
+    margin:35px 0;
+
+    display:grid;
+
+    gap:18px;
+
+    font-weight:600;
+
+}

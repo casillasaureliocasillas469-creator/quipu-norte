@@ -1,0 +1,378 @@
+/*==================================================
+                    TURISMO
+==================================================*/
+
+.tourism{
+
+    padding:130px 0;
+
+    background:#F8F4EC;
+
+    position:relative;
+
+}
+
+.tourism::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:.04;
+
+    background-image:
+
+        repeating-linear-gradient(
+
+            45deg,
+
+            #8B5E3C 0,
+
+            #8B5E3C 2px,
+
+            transparent 2px,
+
+            transparent 22px
+
+        ),
+
+        repeating-linear-gradient(
+
+            -45deg,
+
+            #8B5E3C 0,
+
+            #8B5E3C 2px,
+
+            transparent 2px,
+
+            transparent 22px
+
+        );
+
+}
+
+/*==================================================
+            SECTION HEADER
+==================================================*/
+
+.section-header{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    max-width:760px;
+
+    margin:auto;
+
+    margin-bottom:80px;
+
+}
+
+.section-header .section-tag{
+
+    display:inline-block;
+
+    padding:8px 22px;
+
+    border-radius:30px;
+
+    background:#EFE2CF;
+
+    color:#8B5E3C;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.section-header h2{
+
+    font-size:3.2rem;
+
+    margin:25px 0;
+
+    color:#2E2E2E;
+
+}
+
+.section-header p{
+
+    color:#666;
+
+    font-size:1.08rem;
+
+    line-height:1.9;
+
+}
+
+/*==================================================
+                    GRID
+==================================================*/
+
+.tourism-grid{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(auto-fit,minmax(340px,1fr));
+
+    gap:35px;
+
+}
+
+/*==================================================
+                    CARD
+==================================================*/
+
+.tour-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:26px;
+
+    cursor:pointer;
+
+    height:420px;
+
+    background:#000;
+
+    box-shadow:
+
+        0 18px 45px rgba(0,0,0,.12);
+
+    transition:.45s;
+
+}
+
+.tour-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+
+        0 35px 70px rgba(0,0,0,.22);
+
+}
+
+/*==================================================
+                    IMAGE
+==================================================*/
+
+.tour-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.8s;
+
+}
+
+.tour-card:hover img{
+
+    transform:scale(1.12);
+
+}
+
+/*==================================================
+                OVERLAY
+==================================================*/
+
+.tour-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+
+            to top,
+
+            rgba(0,0,0,.82),
+
+            rgba(0,0,0,.15),
+
+            transparent
+
+        );
+
+    z-index:1;
+
+}
+
+/*==================================================
+                CONTENT
+==================================================*/
+
+.tour-card__overlay{
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    bottom:0;
+
+    z-index:2;
+
+    padding:35px;
+
+}
+
+.tour-card__region{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+    color:white;
+
+    font-size:.85rem;
+
+    letter-spacing:1px;
+
+}
+.tour-card h3{
+
+    color:white;
+
+    font-size:2rem;
+
+    margin:18px 0 12px;
+
+}
+
+.tour-card p{
+
+    color:#EEEEEE;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.tour-card__footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-top:1px solid rgba(255,255,255,.18);
+
+    padding-top:18px;
+
+}
+
+.tour-card__footer span{
+
+    color:white;
+
+    font-size:.9rem;
+
+}
+
+.arrow{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(10px);
+
+    font-size:1.2rem;
+
+    transition:.4s;
+
+}
+
+.tour-card:hover .arrow{
+
+    transform:translateX(8px);
+
+    background:#C98B4A;
+
+}
+
+.tour-card:hover .tour-card__region{
+
+    background:#C98B4A;
+
+}
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+    .tourism{
+
+        padding:100px 0;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .tourism-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .section-header h2{
+
+        font-size:2.3rem;
+
+    }
+
+    .tour-card{
+
+        height:380px;
+
+    }
+
+}

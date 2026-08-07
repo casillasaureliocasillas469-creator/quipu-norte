@@ -1,0 +1,435 @@
+/*==================================================
+                    ARTESANOS
+==================================================*/
+
+.artisans{
+
+    padding:130px 0;
+
+    background:#F8F4EC;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/*==================================================
+            PATRÓN DE FONDO
+==================================================*/
+
+.artisans::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:.03;
+
+    background-image:
+
+        repeating-linear-gradient(
+            45deg,
+            #8B5E3C 0,
+            #8B5E3C 2px,
+            transparent 2px,
+            transparent 22px
+        ),
+
+        repeating-linear-gradient(
+            -45deg,
+            #8B5E3C 0,
+            #8B5E3C 2px,
+            transparent 2px,
+            transparent 22px
+        );
+
+    pointer-events:none;
+
+}
+
+/*==================================================
+                WRAPPER
+==================================================*/
+
+.artisans-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+    margin-top:80px;
+
+}
+
+/*==================================================
+                IMAGEN
+==================================================*/
+
+.artisan-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    height:540px;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.15);
+
+}
+
+.artisan-image img{
+
+    width:100%;
+
+    height:115%;
+
+    object-fit:cover;
+
+    transition:.7s;
+
+}
+
+.artisan-image:hover img{
+
+    transform:scale(1.06);
+
+}
+
+/*==================================================
+                INFORMACIÓN
+==================================================*/
+
+.artisan-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.artisan-info span{
+
+    width:max-content;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    background:#EFE2CF;
+
+    color:#8B5E3C;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+.artisan-info h3{
+
+    font-size:3rem;
+
+    color:#2F2F2F;
+
+}
+
+.artisan-info h4{
+
+    font-size:1.4rem;
+
+    color:#A56D44;
+
+    font-weight:600;
+
+}
+
+.artisan-info p{
+
+    font-size:1.05rem;
+
+    line-height:2;
+
+    color:#555;
+
+}
+
+/*==================================================
+                ESPECIALIDADES
+==================================================*/
+
+.artisan-skills{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    margin-top:10px;
+
+}
+
+.artisan-skills span{
+
+    padding:10px 18px;
+
+    background:#EFE2CF;
+
+    color:#8B5E3C;
+
+    border-radius:30px;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.artisan-skills span:hover{
+
+    background:#C89A65;
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+}
+
+.artisan-info blockquote{
+
+    margin-top:15px;
+
+    padding:25px;
+
+    border-left:5px solid #C89A65;
+
+    background:#FFF;
+
+    border-radius:16px;
+
+    font-style:italic;
+
+    color:#444;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+}
+
+/*==================================================
+                MINIATURAS
+==================================================*/
+
+.artisan-gallery{
+
+    margin-top:70px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:28px;
+
+    flex-wrap:wrap;
+
+    padding:30px 35px;
+
+    background:rgba(255,255,255,.75);
+
+    border-radius:30px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.artisan-thumb{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:12px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.artisan-thumb:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.artisan-thumb img{
+
+    width:96px;
+
+    height:96px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    border:4px solid transparent;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.artisan-thumb img:hover{
+
+    transform:scale(1.08);
+
+}
+
+.artisan-thumb img.active{
+
+    border-color:#C89A65;
+
+    transform:scale(1.1);
+
+    box-shadow:0 14px 30px rgba(200,169,101,.45);
+
+}
+
+.artisan-thumb figcaption{
+
+    font-size:.85rem;
+
+    color:#8B5E3C;
+
+    font-weight:600;
+
+    text-align:center;
+
+    white-space:nowrap;
+
+}
+
+/*==================================================
+            EFECTO DECORATIVO
+==================================================*/
+
+.artisan-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:18px;
+
+    border:2px solid rgba(255,255,255,.35);
+
+    border-radius:24px;
+
+    pointer-events:none;
+
+}
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+    .artisans-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .artisan-image{
+
+        height:440px;
+
+    }
+
+    .artisan-info{
+
+        text-align:center;
+
+        align-items:center;
+
+    }
+
+    .artisan-info blockquote{
+
+        text-align:left;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .artisans{
+
+        padding:100px 0;
+
+    }
+
+    .artisan-image{
+
+        height:340px;
+
+    }
+
+    .artisan-info h3{
+
+        font-size:2.2rem;
+
+    }
+
+    .artisan-info h4{
+
+        font-size:1.2rem;
+
+    }
+
+    .artisan-thumb img{
+
+        width:70px;
+
+        height:70px;
+
+    }
+
+    .artisan-gallery{
+
+        gap:18px;
+
+        padding:22px 18px;
+
+    }
+
+    .artisan-thumb figcaption{
+
+        font-size:.75rem;
+
+    }
+
+}

@@ -1,0 +1,226 @@
+/*==================================================
+                    FOOTER
+==================================================*/
+
+.footer{
+
+    background:#2F241D;
+
+    color:#F8F4EC;
+
+    padding:100px 0 40px;
+
+    overflow:hidden;
+
+}
+
+/*==================================================
+                FRASE
+==================================================*/
+
+.footer-quote{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.footer-quote h2{
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-size:2.2rem;
+
+    line-height:1.6;
+
+    font-weight:500;
+
+    color:#F4E8D8;
+
+}
+
+/*==================================================
+                CONTENIDO
+==================================================*/
+
+.footer-content{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:50px;
+
+    padding-bottom:50px;
+
+    border-bottom:1px solid rgba(255,255,255,.12);
+
+}
+
+/*==================================================
+                LOGO
+==================================================*/
+
+.footer-brand img{
+
+    width:90px;
+
+    margin-bottom:20px;
+
+}
+
+.footer-brand h3{
+
+    font-size:2rem;
+
+    margin-bottom:18px;
+
+    color:#C89A65;
+
+}
+
+.footer-brand p{
+
+    color:#D8CEC2;
+
+    line-height:1.9;
+
+    max-width:330px;
+
+}
+
+/*==================================================
+                TITULOS
+==================================================*/
+
+.footer-links h4,
+.footer-contact h4{
+
+    margin-bottom:20px;
+
+    font-size:1.2rem;
+
+    color:#C89A65;
+
+}
+
+/*==================================================
+                LISTAS
+==================================================*/
+
+.footer-links ul,
+.footer-contact ul{
+
+    list-style:none;
+
+}
+
+.footer-links li,
+.footer-contact li{
+
+    margin-bottom:15px;
+
+}
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:#F8F4EC;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#C89A65;
+
+    padding-left:8px;
+
+}
+
+.footer-contact li{
+
+    color:#D8CEC2;
+
+}
+
+/*==================================================
+                COPYRIGHT
+==================================================*/
+
+.footer-bottom{
+
+    margin-top:40px;
+
+    text-align:center;
+
+}
+
+.footer-bottom p{
+
+    color:#E9DCCB;
+
+    margin-bottom:10px;
+
+    font-size:1.05rem;
+
+}
+
+.footer-bottom span{
+
+    color:#BDAE9C;
+
+    font-size:.95rem;
+
+}
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+    .footer-content{
+
+        grid-template-columns:1fr 1fr;
+
+        gap:40px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .footer{
+
+        padding:80px 0 30px;
+
+    }
+
+    .footer-content{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .footer-brand p{
+
+        margin:auto;
+
+    }
+
+    .footer-quote h2{
+
+        font-size:1.6rem;
+
+    }
+
+}

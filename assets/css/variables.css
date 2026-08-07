@@ -1,0 +1,22 @@
+:root {
+  /* Colores */
+
+  --color-bg: #f7f1e5;
+  --color-primary: #8b5e3c;
+  --color-secondary: #b77b4a;
+  --color-accent: #c94c4c;
+  --color-gold: #c8a951;
+  --color-text: #2f2f2f;
+  --color-white: #ffffff;
+
+  /* Tipografía */
+
+  --font-title: "Poppins", sans-serif;
+  --font-text: "Open Sans", sans-serif;
+
+  /* Tamaños */
+
+  --container: 1200px;
+
+  --transition: 0.35s;
+}

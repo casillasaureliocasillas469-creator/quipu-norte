@@ -1,0 +1,421 @@
+/*================ HEADER ================*/
+
+.header{
+
+    position: fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    background:rgba(247,241,229,.92);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom:1px solid rgba(139,94,60,.15);
+
+    transition:.4s;
+
+}
+
+.header-container{
+
+    height:90px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+/*============== LOGO ==============*/
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo img{
+
+    width:58px;
+
+}
+
+.logo-text h2{
+
+    font-size:24px;
+
+    color:var(--color-primary);
+
+    font-family:var(--font-title);
+
+}
+
+.logo-text span{
+
+    color:var(--color-secondary);
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+}
+
+/*============== MENÚ ==============*/
+
+.navbar{
+
+    position:relative;
+
+}
+
+/* cuerda */
+
+.quipu-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:42px;
+
+    position:relative;
+
+}
+
+/*============== ITEMS ==============*/
+
+.quipu-menu li{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.quipu-menu a{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--color-text);
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+/*============== NUDOS ==============*/
+
+.knot{
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        145deg,
+        #A56D44,
+        #704221
+    );
+
+    border:3px solid #F7F1E5;
+
+    position:relative;
+
+    transition:background .35s, box-shadow .35s;
+
+    box-shadow:
+
+        0 4px 8px rgba(0,0,0,.18);
+
+}
+
+.quipu-menu a:hover .knot{
+
+    transform:scale(1.35);
+
+    background:var(--color-gold);
+
+}
+
+.quipu-menu a:hover{
+
+    color:var(--color-primary);
+
+}
+
+.active .knot{
+
+    background:var(--color-accent);
+
+    box-shadow:0 0 20px rgba(201,76,76,.45);
+
+}
+
+/*=============================
+        CUERDA SVG
+=============================*/
+
+.navbar{
+
+    position:relative;
+
+    width:720px;
+
+}
+
+.quipu-line{
+
+    position:absolute;
+
+    left:0;
+
+    top:2px;
+
+    width:100%;
+
+    height:40px;
+
+    z-index:1;
+
+}
+
+.quipu-menu{
+
+    position:relative;
+
+    z-index:10;
+
+    justify-content:space-between;
+
+}
+
+.quipu-menu a{
+
+    position:relative;
+
+}
+
+/* cuerda vertical */
+
+.quipu-menu a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:100%;
+
+    width:3px;
+
+    height:16px;
+
+    transform:translateX(-50%);
+
+    background:var(--color-primary);
+
+    border-radius:5px;
+
+}
+
+.header{
+
+    overflow:hidden;
+
+}
+
+.header::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:.08;
+
+    background-image:
+
+        repeating-linear-gradient(
+            45deg,
+            #8B5E3C 0px,
+            #8B5E3C 1px,
+            transparent 1px,
+            transparent 12px
+        ),
+
+        repeating-linear-gradient(
+            -45deg,
+            #8B5E3C 0px,
+            #8B5E3C 1px,
+            transparent 1px,
+            transparent 12px
+        );
+
+    pointer-events:none;
+
+}
+
+.header{
+
+    box-shadow:
+
+        0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.knot::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:7px;
+
+    height:7px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.45);
+
+    top:2px;
+
+    left:2px;
+
+}
+@keyframes swing{
+
+    0%{
+
+        rotate:0deg;
+
+    }
+
+    50%{
+
+        rotate:3deg;
+
+    }
+
+    100%{
+
+        rotate:0deg;
+
+    }
+
+}
+
+.knot{
+
+    animation:swing 4s ease-in-out infinite;
+
+}
+
+.quipu-menu li:nth-child(2) .knot{
+
+    animation-delay:.5s;
+
+}
+
+.quipu-menu li:nth-child(3) .knot{
+
+    animation-delay:1s;
+
+}
+
+.quipu-menu li:nth-child(4) .knot{
+
+    animation-delay:1.5s;
+
+}
+
+.quipu-menu li:nth-child(5) .knot{
+
+    animation-delay:2s;
+
+}
+
+.quipu-menu li:nth-child(6) .knot{
+
+    animation-delay:2.5s;
+
+}
+
+.quipu-menu a:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.quipu-menu a:hover .knot{
+
+    transform:scale(1.5);
+
+    box-shadow:
+
+        0 0 20px rgba(200,169,81,.6);
+
+}
+
+/*=============================
+        RESPONSIVE MENÚ
+=============================*/
+
+@media(max-width:1200px){
+
+    .navbar{
+
+        width:620px;
+
+    }
+
+    .quipu-menu{
+
+        gap:26px;
+
+    }
+
+}
+
+@media(max-width:992px){
+
+    .navbar{
+
+        width:520px;
+
+    }
+
+    .quipu-menu{
+
+        gap:16px;
+
+    }
+
+    .quipu-menu a{
+
+        font-size:.85rem;
+
+    }
+
+}

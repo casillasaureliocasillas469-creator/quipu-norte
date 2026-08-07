@@ -1,0 +1,131 @@
+/*==========================================
+                LOOM
+==========================================*/
+
+.loom{
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    background:#F3E8D0;
+
+}
+
+/*==========================================
+            HILOS
+==========================================*/
+
+.loom__threads{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:space-evenly;
+
+}
+
+.loom__threads span{
+
+    width:5px;
+
+    height:100%;
+
+    background:#8B5E3C;
+
+    transform-origin:top;
+
+}
+
+/*==========================================
+            PATRÓN
+==========================================*/
+
+.loom::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:.06;
+
+    background-image:
+
+    repeating-linear-gradient(
+
+        45deg,
+
+        #8B5E3C 0,
+
+        #8B5E3C 2px,
+
+        transparent 2px,
+
+        transparent 16px
+
+    ),
+
+    repeating-linear-gradient(
+
+        -45deg,
+
+        #8B5E3C 0,
+
+        #8B5E3C 2px,
+
+        transparent 2px,
+
+        transparent 16px
+
+    );
+
+}
+
+/*==========================================
+            TEXTO
+==========================================*/
+
+.loom__content{
+
+    position:relative;
+
+    max-width:800px;
+
+    text-align:center;
+
+    z-index:10;
+
+}
+
+.loom__content h2{
+
+    font-size:3rem;
+
+    color:#8B5E3C;
+
+    margin-bottom:30px;
+
+}
+
+.loom__content p{
+
+    font-size:1.2rem;
+
+    line-height:2;
+
+    color:#555;
+
+}
