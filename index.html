@@ -8,6 +8,12 @@
 
     <title>Quipu del Norte</title>
 
+    <!-- FUENTES -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- CSS -->
 
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -23,6 +29,7 @@
     <link rel="stylesheet" href="assets/css/artisans.css">
     <link rel="stylesheet" href="assets/css/map.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     
 
 </head>
@@ -450,7 +457,7 @@
 
             <!-- ================= CARD 1 ================= -->
 
-            <article class="tour-card">
+            <article class="tour-card" data-key="chan-chan">
 
                 <img src="assets/img/turismo/chan-chan.jpg" alt="Chan Chan">
 
@@ -496,7 +503,7 @@
 
             <!-- ================= CARD 2 ================= -->
 
-            <article class="tour-card">
+            <article class="tour-card" data-key="kuelap">
 
                 <img src="assets/img/turismo/kuelap.jpg" alt="Kuélap">
 
@@ -542,7 +549,7 @@
 
             <!-- ================= CARD 3 ================= -->
 
-            <article class="tour-card">
+            <article class="tour-card" data-key="gocta">
 
                 <img src="assets/img/turismo/gocta.jpg" alt="Gocta">
 
@@ -588,7 +595,7 @@
 
             <!-- ================= CARD 4 ================= -->
 
-            <article class="tour-card">
+            <article class="tour-card" data-key="mancora">
 
                 <img src="assets/img/turismo/mancora.jpg" alt="Máncora">
 
@@ -634,7 +641,7 @@
 
             <!-- ================= CARD 5 ================= -->
 
-            <article class="tour-card">
+            <article class="tour-card" data-key="huanchaco">
 
                 <img src="assets/img/turismo/huanchaco.jpg" alt="Huanchaco">
 
@@ -680,7 +687,7 @@
 
             <!-- ================= CARD 6 ================= -->
 
-            <article class="tour-card">
+            <article class="tour-card" data-key="canchaque">
 
                 <img src="assets/img/turismo/canchaque.jpg" alt="Museo Tumbas Reales de Sipán">
 
@@ -771,7 +778,7 @@
 
             <!-- ================== ITEM 1 ================== -->
 
-            <article class="timeline-item">
+            <article class="timeline-item" data-key="mochica">
 
                 <div class="timeline-content">
 
@@ -814,7 +821,7 @@
 
             <!-- ================== ITEM 2 ================== -->
 
-            <article class="timeline-item reverse">
+            <article class="timeline-item reverse" data-key="chimu">
 
                 <div class="timeline-image">
 
@@ -856,7 +863,7 @@
 
             <!-- ================== ITEM 3 ================== -->
 
-            <article class="timeline-item">
+            <article class="timeline-item" data-key="chachapoyas">
 
                 <div class="timeline-content">
 
@@ -898,7 +905,7 @@
 
             <!-- ================== ITEM 4 ================== -->
 
-            <article class="timeline-item reverse">
+            <article class="timeline-item reverse" data-key="actualidad">
 
                 <div class="timeline-image">
 
@@ -981,7 +988,7 @@
 
             <!--================= 1 =================-->
 
-            <article class="tradition-card tradition-large">
+            <article class="tradition-card tradition-large" data-key="marinera">
 
                 <img src="assets/img/tradiciones/marinera.jpg" alt="Marinera Norteña">
 
@@ -1011,7 +1018,7 @@
 
             <!--================= 2 =================-->
 
-            <article class="tradition-card">
+            <article class="tradition-card" data-key="caballitos">
 
                 <img src="assets/img/tradiciones/caballitos.jpg" alt="Caballitos de Totora">
 
@@ -1041,7 +1048,7 @@
 
             <!--================= 3 =================-->
 
-            <article class="tradition-card">
+            <article class="tradition-card" data-key="gastronomia">
 
                 <img src="assets/img/tradiciones/gastronomia.jpg" alt="Gastronomía">
 
@@ -1071,7 +1078,7 @@
 
             <!--================= 4 =================-->
 
-            <article class="tradition-card">
+            <article class="tradition-card" data-key="tejidos">
 
                 <img src="assets/img/tradiciones/tejidos.jpg" alt="Tejidos">
 
@@ -1101,7 +1108,7 @@
 
             <!--================= 5 =================-->
 
-            <article class="tradition-card">
+            <article class="tradition-card" data-key="cumananas">
 
                 <img src="assets/img/tradiciones/cumananas.jpg" alt="Cumananas">
 
@@ -1131,7 +1138,7 @@
 
             <!--================= 6 =================-->
 
-            <article class="tradition-card tradition-wide">
+            <article class="tradition-card tradition-wide" data-key="festividades">
 
                 <img src="assets/img/tradiciones/festividades.jpg" alt="Festividades">
 
@@ -1264,7 +1271,7 @@
 
             <figure class="artisan-thumb">
 
-                <img src="assets/img/artesanos/artesano1.jpg" class="active" data-name="Juan Pérez" data-region="Piura"
+                <img src="assets/img/artesanos/artesano1.jpg" class="active" data-key="juan-perez" data-name="Juan Pérez" data-region="Piura"
                     data-job="Maestro Textil"
                     data-description="Desde hace más de treinta años elabora tejidos tradicionales utilizando técnicas heredadas de su familia."
                     data-quote="Cada hilo guarda la memoria de nuestros antepasados."
@@ -1276,7 +1283,7 @@
 
             <figure class="artisan-thumb">
 
-                <img src="assets/img/artesanos/artesano2.jpg" data-name="María López" data-region="Lambayeque"
+                <img src="assets/img/artesanos/artesano2.jpg" data-key="maria-lopez" data-name="María López" data-region="Lambayeque"
                     data-job="Ceramista" data-description="Especialista en cerámica inspirada en la cultura Mochica."
                     data-quote="La arcilla conserva nuestra historia."
                     data-skill1="🏺 Cerámica" data-skill2="🔥 Modelado" data-skill3="🎨 Decoración Mochica">
@@ -1287,7 +1294,7 @@
 
             <figure class="artisan-thumb">
 
-                <img src="assets/img/artesanos/artesano3.jpg" data-name="Pedro Sánchez" data-region="La Libertad"
+                <img src="assets/img/artesanos/artesano3.jpg" data-key="pedro-sanchez" data-name="Pedro Sánchez" data-region="La Libertad"
                     data-job="Totora" data-description="Construye caballitos de totora siguiendo técnicas ancestrales."
                     data-quote="El mar también enseña a crear."
                     data-skill1="🌾 Totora" data-skill2="🛶 Caballitos" data-skill3="🌊 Pesca tradicional">
@@ -1298,7 +1305,7 @@
 
             <figure class="artisan-thumb">
 
-                <img src="assets/img/artesanos/artesano4.jpg" data-name="Ana Torres" data-region="Amazonas"
+                <img src="assets/img/artesanos/artesano4.jpg" data-key="ana-torres" data-name="Ana Torres" data-region="Amazonas"
                     data-job="Tejedora" data-description="Conserva diseños tradicionales de la cultura Chachapoyas."
                     data-quote="Cada tejido cuenta una historia."
                     data-skill1="🧵 Tejidos" data-skill2="🌄 Diseños Chachapoyas" data-skill3="🪡 Bordados">
@@ -1309,7 +1316,7 @@
 
             <figure class="artisan-thumb">
 
-                <img src="assets/img/artesanos/artesano5.jpg" data-name="Luis Díaz" data-region="Cajamarca"
+                <img src="assets/img/artesanos/artesano5.jpg" data-key="luis-diaz" data-name="Luis Díaz" data-region="Cajamarca"
                     data-job="Tallador" data-description="Trabaja la piedra y la madera con técnicas tradicionales."
                     data-quote="El arte nace de la paciencia."
                     data-skill1="🪨 Tallado" data-skill2="🪵 Madera" data-skill3="🛠️ Escultura">
@@ -1320,7 +1327,7 @@
 
             <figure class="artisan-thumb">
 
-                <img src="assets/img/artesanos/artesano6.jpg" data-name="Rosa Castillo" data-region="Tumbes"
+                <img src="assets/img/artesanos/artesano6.jpg" data-key="rosa-castillo" data-name="Rosa Castillo" data-region="Tumbes"
                     data-job="Artesana Marina" data-description="Elabora piezas inspiradas en el mar y la naturaleza."
                     data-quote="Nuestra identidad vive en cada creación."
                     data-skill1="🐚 Conchas" data-skill2="🌊 Arte Marino" data-skill3="🎁 Artesanía Decorativa">
@@ -1469,7 +1476,7 @@
                     TARJETA
             ===================================-->
 
-            <div class="map-card">
+            <div class="map-card" data-key="mapa">
 
                 <div class="map-photo">
 
@@ -1630,13 +1637,13 @@
 
                     <li>
 
-                        ✉ contacto@lachilala.pe
+                        ✉ contacto@amiiilagros251
 
                     </li>
 
                     <li>
 
-                        🌐 www.lachilala.pe
+                        🌐 www.AryanaMilagros.pe
 
                     </li>
 
@@ -1668,6 +1675,66 @@
 
 </footer>
 
+    <!-- ================= MODAL ================= -->
+
+    <div class="modal" id="info-modal" aria-hidden="true">
+
+        <div class="modal__overlay" data-close></div>
+
+        <div class="modal__window" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+
+            <button class="modal__close" data-close aria-label="Cerrar">&times;</button>
+
+            <div class="modal__media">
+
+                <img id="modal-image" src="" alt="">
+
+                <span class="modal__badge" id="modal-badge"></span>
+
+            </div>
+
+            <div class="modal__body">
+
+                <span class="modal__tag" id="modal-tag"></span>
+
+                <h3 id="modal-title"></h3>
+
+                <div class="modal__section">
+
+                    <h4>Características</h4>
+
+                    <ul id="modal-features"></ul>
+
+                </div>
+
+                <div class="modal__section">
+
+                    <h4>Importancia</h4>
+
+                    <p id="modal-importance"></p>
+
+                </div>
+
+                <div class="modal__fact">
+
+                    <span class="modal__fact-icon">✦</span>
+
+                    <div>
+
+                        <strong>Hecho importante</strong>
+
+                        <p id="modal-fact"></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
     <!-- GSAP -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
@@ -1684,6 +1751,7 @@
     <script src="assets/js/traditions.js"></script>
     <script src="assets/js/artisans.js"></script>
     <script src="assets/js/map.js"></script>
+    <script src="assets/js/modal.js"></script>
     <script src="assets/js/footer.js"></script>
 
 

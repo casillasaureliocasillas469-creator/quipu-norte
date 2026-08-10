@@ -9,10 +9,18 @@
   --color-text: #2f2f2f;
   --color-white: #ffffff;
 
+  /* Colores vibrantes por sección */
+
+  --c-turismo: #f2703a;
+  --c-historia: #0ea5a0;
+  --c-tradiciones: #d6336c;
+  --c-artesanos: #7c4dd6;
+  --c-mapa: #d99a1b;
+
   /* Tipografía */
 
-  --font-title: "Poppins", sans-serif;
-  --font-text: "Open Sans", sans-serif;
+  --font-title: "Bebas Neue", sans-serif;
+  --font-text: "Quicksand", sans-serif;
 
   /* Tamaños */
 
