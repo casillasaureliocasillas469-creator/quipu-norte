@@ -27,38 +27,18 @@ window.addEventListener("load", () => {
     });
 
     /*=============================
-            MONTAÑAS
+            FOTO DE FONDO
     =============================*/
 
-    tl.from(".mountain-3", {
+    tl.from(".hero__photo", {
 
         y: 200,
 
         opacity: 0,
 
-        duration: 1
+        duration: 1.6
 
-    }, "-=1.2")
-
-        .from(".mountain-2", {
-
-            y: 180,
-
-            opacity: 0,
-
-            duration: 1
-
-        }, "-=.8")
-
-        .from(".mountain-1", {
-
-            y: 150,
-
-            opacity: 0,
-
-            duration: 1
-
-        }, "-=.8");
+    }, "-=1.2");
 
     /*=============================
             BADGE
@@ -235,31 +215,11 @@ hero.addEventListener("mousemove", (e) => {
 
     const y = (e.clientY / window.innerHeight) - 0.5;
 
-    gsap.to(".mountain-1", {
+    gsap.to(".hero__photo", {
 
         x: x * 20,
 
-        y: y * 15,
-
-        duration: 1
-
-    });
-
-    gsap.to(".mountain-2", {
-
-        x: x * 35,
-
-        y: y * 25,
-
-        duration: 1
-
-    });
-
-    gsap.to(".mountain-3", {
-
-        x: x * 50,
-
-        y: y * 35,
+        y: y * 10,
 
         duration: 1
 

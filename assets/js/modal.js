@@ -279,7 +279,7 @@ const MODAL_DATA = {
         features: [
             "Carnaval de Cajamarca, uno de los más grandes del país.",
             "Fiestas patronales y religiosas en cada región.",
-            "Danzas, música y gastronomía típica.",
+            "Danza de los diablicos de huancabamba, música y gastronomía típica de piura canchaque.",
             "Reúnen a familias y comunidades enteras."
         ],
         importance: "Las festividades fortalecen los lazos comunitarios y conservan las creencias y costumbres de los pueblos del norte.",

@@ -52,41 +52,28 @@
 
 }
 
-/*--------------- SOL ---------------*/
+/*--------------- RESPLANDOR ---------------*/
 
-.about__sun{
+.about__glow{
 
     position:absolute;
 
-    width:260px;
+    left:0;
 
-    height:260px;
+    right:0;
 
-    border-radius:50%;
+    bottom:0;
 
-    top:80px;
-
-    right:15%;
+    height:50%;
 
     background:radial-gradient(
-
-        circle,
-
-        #FFF7CC 0%,
-
-        #FFD976 45%,
-
-        rgba(255,217,118,.1) 100%
-
+        ellipse 70% 90% at 50% 100%,
+        rgba(255,196,105,.45) 0%,
+        rgba(255,196,105,.18) 45%,
+        rgba(255,196,105,0) 78%
     );
 
-    filter:blur(2px);
-
-    box-shadow:
-
-        0 0 80px rgba(255,208,90,.55),
-
-        0 0 160px rgba(255,208,90,.30);
+    pointer-events:none;
 
 }
 
@@ -246,6 +233,40 @@
 
 }
 
+@media(max-width:1100px){
+
+    .about__container{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:40px;
+
+    }
+
+    .about__photo{
+
+        width:320px;
+
+        height:380px;
+
+    }
+
+    .about__content{
+
+        padding:24px 18px;
+
+        max-width:420px;
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+}
+
 .about__image{
 
     display:flex;
@@ -254,31 +275,37 @@
 
 }
 
-.about__card{
+.about__photo{
 
-    width:360px;
+    width:420px;
 
-    height:360px;
+    height:480px;
+
+    object-fit:cover;
+
+    object-position:center;
 
     border-radius:30px;
 
-    background:linear-gradient(
-        135deg,
-        #C18B56,
-        #8B5E3C
-    );
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    font-size:120px;
-
-    color:white;
-
     box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+    border:8px solid #FFF;
+
+}
+
+.about__content{
+
+    background:rgba(255,251,240,.88);
+
+    padding:26px 28px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(139,94,60,.15);
+
+    box-shadow:0 16px 40px rgba(90,55,20,.12);
+
+    max-width:480px;
 
 }
 
@@ -292,15 +319,17 @@
 
     text-transform:uppercase;
 
+    font-size:.8rem;
+
 }
 
 .about h2{
 
-    font-size:3rem;
+    font-size:1.75rem;
 
-    margin:20px 0;
+    margin:12px 0;
 
-    line-height:1.2;
+    line-height:1.3;
 
 }
 
@@ -312,20 +341,24 @@
 
 .about p{
 
-    line-height:2;
+    line-height:1.7;
 
     color:#555;
+
+    font-size:.92rem;
 
 }
 
 .about__features{
 
-    margin:35px 0;
+    margin:18px 0;
 
     display:grid;
 
-    gap:18px;
+    gap:8px;
 
     font-weight:600;
+
+    font-size:.85rem;
 
 }

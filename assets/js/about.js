@@ -4,7 +4,7 @@ gsap.registerPlugin(ScrollTrigger);
         FONDO
 ==================================*/
 
-gsap.from(".about__sun", {
+gsap.from(".about__glow", {
 
     scrollTrigger: {
 
@@ -16,15 +16,13 @@ gsap.from(".about__sun", {
 
     },
 
-    scale: 0,
-
     opacity: 0,
 
     duration: 1.2,
 
     ease: "power3.out",
 
-    clearProps: "scale,opacity"
+    clearProps: "opacity"
 
 });
 

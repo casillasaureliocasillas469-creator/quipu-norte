@@ -38,11 +38,13 @@
 
 .loom__threads span{
 
-    width:5px;
+    width:4px;
 
     height:100%;
 
     background:#8B5E3C;
+
+    opacity:.35;
 
     transform-origin:top;
 
@@ -108,6 +110,16 @@
 
     z-index:10;
 
+    background:rgba(255,251,240,.75);
+
+    padding:50px 60px;
+
+    border-radius:24px;
+
+    border:1px solid rgba(139,94,60,.12);
+
+    box-shadow:0 20px 50px rgba(90,55,20,.10);
+
 }
 
 .loom__content h2{
@@ -116,16 +128,44 @@
 
     color:#8B5E3C;
 
-    margin-bottom:30px;
+    margin-bottom:24px;
+
+    text-shadow:0 1px 2px rgba(255,251,240,.9);
 
 }
 
 .loom__content p{
 
-    font-size:1.2rem;
+    font-size:1.1rem;
 
-    line-height:2;
+    line-height:1.9;
 
-    color:#555;
+    color:#4A3823;
+
+    text-shadow:0 1px 2px rgba(255,251,240,.8);
+
+}
+
+@media(max-width:600px){
+
+    .loom__content{
+
+        padding:36px 22px;
+
+        margin:0 16px;
+
+    }
+
+    .loom__content h2{
+
+        font-size:2.1rem;
+
+    }
+
+    .loom__content p{
+
+        font-size:1rem;
+
+    }
 
 }
